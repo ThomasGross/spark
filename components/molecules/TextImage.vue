@@ -14,7 +14,10 @@
             Whether you’re running a vintage, building your perfect café racer
             or just making your daily motorcycle as reliable as it can be.
           </p>
-          <p>We got you covered from <span>€99</span></p>
+          <p>
+            We got you covered from
+            <span>€99</span>
+          </p>
         </div>
         <Button>Preorder</Button>
       </div>
@@ -27,7 +30,7 @@
         data-aos-delay="1000"
         data-aos-duration="500"
       >
-        <img class="img" src="img/motorcycle.png" alt="" />
+        <img class="img" src="img/motorcycle.png" alt />
 
         <DoodleHeatRight
           :class="[
@@ -67,22 +70,22 @@ export default {
     DoodleHeatRight,
     DoodleHeatLeft,
     DoodleLight,
-    Parallax
+    Parallax,
   },
   data() {
     return {
       isShow: false,
-      isShake: false
+      isShake: false,
     };
   },
-  created: function() {
+  created: function () {
     setTimeout(() => {
       this.isShow = true;
     }, 1500);
     setTimeout(() => {
       this.isShake = true;
     }, 1800);
-  }
+  },
 };
 </script>
 
@@ -189,9 +192,8 @@ export default {
       margin-bottom: 65px;
 
       .title {
-        margin-right: 50px;
-        font-size: 55px;
-        font-size: 3.85vw;
+        // margin-right: 80px;
+        font-size: 4.8vw;
         line-height: 1.2;
 
         $hover: "";

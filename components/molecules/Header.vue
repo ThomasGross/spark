@@ -1,6 +1,6 @@
 <template>
-  <div class="container grid">
-    <div class="header col-desk-12">
+  <div class="container">
+    <div class="header">
       <div class="logo-contianer">
         <nuxt-link to="/">
           <LogoIcon class="logo" />
@@ -36,24 +36,27 @@
 import LogoIcon from "assets/svg/logo.svg";
 
 export default {
-  components: { LogoIcon }
+  components: { LogoIcon },
 };
 </script>
 
 <style lang="scss" scoped>
 .container {
-  .logo-contianer {
-    left: -50%;
-  }
-
   .header {
     display: flex;
     flex: 1;
     margin: 32px 0 0;
     justify-content: space-between;
 
+    .logo-contianer {
+      position: relative;
+      margin-left: 32px;
+    }
+
     .nav-menu {
       display: flex;
+      position: relative;
+      margin-right: 32px;
 
       &__item {
         margin-left: 20px;
