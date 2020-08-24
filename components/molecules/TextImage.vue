@@ -119,12 +119,12 @@ export default {
     }
 
     &__shake-icon {
-      #{$hover} & {
-        animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-        transform: translate3d(0, 0, 0);
-        backface-visibility: hidden;
-        perspective: 1000px;
-      }
+      // #{$hover} & {
+      //   animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      //   transform: translate3d(0, 0, 0);
+      //   backface-visibility: hidden;
+      //   perspective: 1000px;
+      // }
 
       &.shake {
         animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
